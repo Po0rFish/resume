@@ -1,8 +1,18 @@
+@import '/src/App.sass'
+
 .profile
-  // background-color: 'green'
+  background-color: #fff
   border-radius: 6px
-  width: 100%
-  display: inline-block
+  display: block
+  .timelineItem_text
+    font-size: 13.5px
+    color: #787878
+    font-weight: 400
+    span
+      color: #111
+    a
+      color: #787878
+      text-decoration: none
 
   .profile_name
     line-height: 18px
@@ -15,11 +25,37 @@
       font-size: 13px
       color: #777
   .profile_image
-    margin-top: -10px
+    margin: 0px
     -webki-clip-path: polygon(0 9%,100% 0, 100% 94%,0% 100%)
     clip-path: polygon(0 9%,100% 0, 100% 94%,0% 100%)
-    .img
+    img
       width: 100%
       height: 100%
+  .profile_information
+    top: 0
+    left: 0
+    margin: -50px 15px 30px
+    .MuiTimeline-root
+      .css-ha3bif-MuiTimelineItem-root
+        min-height: 10px
+        margin: 0px
+  .profile_information .timeline_content
+    padding-left: 10px
+    width: 5%
+    // height: 10px separator changes here
 
-   
+    .MuiTypography-root
+      width: max-content
+      padding: 3px 3px 3px 0px
+
+      span
+        text-transform: capitalize
+        font-size: 17px
+        font-weight: bold
+    .css-v6mo1y-MuiTimelineDot-root
+      background-color: #fff
+    .MuiTimelineDot-root
+      color: #000
+      border-color: $main-color
+      font-size: small
+      // margin: 5px 0px 5px 30px

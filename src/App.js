@@ -14,8 +14,8 @@ import "./App.sass";
 
 function App() {
   return (
-    <Container className="container" fixed={true}>
-      <Grid container>
+    <Container className="top_60">
+      <Grid container spacing={7}>
         <Grid className="business-card" item xs={12} sm={12} lg={3} md={4}>
           <Profile />
         </Grid>

@@ -1,9 +1,16 @@
-import React from 'react'
-
-const Button = () => {
+import React from "react";
+import Button from "@mui/material/Button";
+import './Button.sass'
+const CustomButton = ({ text, icon }) => {
   return (
-    <div>Button</div>
-  )
-}
+    <Button
+    
+      className="custom_btn"
+      endIcon={icon ? <div className="btn_icon_container"></div> : null}
+    >
+      <span className="btn_text">{text}</span>
+    </Button>
+  );
+};
 
-export default Button
+export default CustomButton;
