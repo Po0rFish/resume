@@ -7,7 +7,6 @@ import resumeData from "../../utils/resumeData";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import { Link } from "react-router-dom";
 import { TimelineContent, TimelineItem } from "@mui/lab";
-import Button from "../Button/Button";
 import CustomButton from "../Button/Button";
 import { GetApp, GetAppOutlined } from "@mui/icons-material";
 
@@ -60,7 +59,10 @@ const Profile = () => {
         </CustomTimeline>
         <br />
         {/* <button>my Button</button> */}
+        <div className="button_conteiner">
         <CustomButton text={"Download Cv"} icon={<GetApp />} />
+
+        </div>
       </div>
     </div>
   );

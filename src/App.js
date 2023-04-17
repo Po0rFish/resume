@@ -5,11 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import Resume from "./pages/Resume/Resume";
 import Button from "./components/Button/Button";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.sass";
 
 function App() {
@@ -20,12 +16,14 @@ function App() {
           <Profile />
         </Grid>
         <Grid item xs>
-          <Header />
           <Router>
-            <Routes>
-              <Route path="/portfolio" element={<Portfolio />}></Route>
-              <Route path="/" element={<Resume />}></Route>
-            </Routes>
+            <Header />
+            <div className="main-content container_shadow">
+              <Routes>
+                <Route path="/portfolio" element={<Portfolio />}></Route>
+                <Route path="/" element={<Resume />}></Route>
+              </Routes>
+            </div>
           </Router>
 
           <Footer />

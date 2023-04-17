@@ -3,7 +3,7 @@
 .profile
   background-color: #fff
   border-radius: 6px
-  display: block
+  // display: inline-block
   .timelineItem_text
     font-size: 13.5px
     color: #787878
@@ -35,6 +35,11 @@
     top: 0
     left: 0
     margin: -50px 15px 30px
+    .button_conteiner
+      width: 100%
+      display: flex
+      justify-content: center
+      margin-top: 10px
     .MuiTimeline-root
       .css-ha3bif-MuiTimelineItem-root
         min-height: 10px
@@ -43,11 +48,9 @@
     padding-left: 10px
     width: 5%
     // height: 10px separator changes here
-
     .MuiTypography-root
       width: max-content
       padding: 3px 3px 3px 0px
-
       span
         text-transform: capitalize
         font-size: 17px
